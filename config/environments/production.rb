@@ -79,6 +79,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = {
     # Note: we want this to be required in production
-    host: ENV.fetch("ACTION_MAILER_HOST")
+    # host: ENV.fetch("ACTION_MAILER_HOST")
   }
 end
