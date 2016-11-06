@@ -1,1 +1,55 @@
 .home#show
+  background-color: lighten(#FFF4EE, 2%)
+  text-align: center
+  .centre
+    max-width: 900px
+    margin: auto
+    padding: 75px 25px
+
+  .save-the-date, .notification
+    width: 100%
+  .save-the-date
+    padding-bottom: 75px
+    font-size: 1.5em
+    float: left
+    line-height: 1.35em
+    font-family: $secondary-font
+    +small()
+      font-size: 2.5em
+    p.fadeOut
+      position: absolute
+      left: 0
+      right: 0
+      top: 175px
+      font-size: 1.5em
+
+  .notification
+    background-color: #FFF4EE
+    padding: 25px 50px
+    margin-left: 5%
+    float: right
+    label
+      font-weight: normal
+      font-family: 'Crimson Text', serif
+      max-width: 500px
+      font-size: 24px
+      margin-bottom: 15px
+
+    #mc_embed_signup
+      margin: auto
+      background-color: transparent
+      text-align: center
+
+      input[type="email"]
+        background-color: lighten(#FFF4EE, 2%)
+        border-top: none
+        border-left: none
+        border-right: none
+        border-radius: 0
+        box-shadow: none
+        text-indent: 0
+        border-bottom: 1px solid #000
+      input[type="submit"]
+        border-radius: 3px
+        background-color: #000
+        margin-bottom: 0
