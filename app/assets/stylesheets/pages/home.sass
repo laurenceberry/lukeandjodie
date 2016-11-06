@@ -4,24 +4,31 @@
   .centre
     max-width: 900px
     margin: auto
-    padding: 75px 25px
+    padding: 25px 25px 0 25px
+    +small()
+      padding: 65px 25px 0 25px
 
   .save-the-date, .notification
     width: 100%
   .save-the-date
-    padding-bottom: 75px
+    padding-bottom: 25px
     font-size: 1.5em
     float: left
     line-height: 1.35em
     font-family: $secondary-font
     +small()
       font-size: 2.5em
+    +small()
+      padding-bottom: 50px
     p.fadeOut
       position: absolute
       left: 0
       right: 0
-      top: 175px
+      top: 115px
       font-size: 1.5em
+      +small()
+        top: 175px
+
 
   .notification
     background-color: #FFF4EE
