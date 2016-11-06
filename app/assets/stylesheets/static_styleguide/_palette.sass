@@ -1,0 +1,27 @@
+@import ../base/colours
+
+$palette: $brand-blue $brand-blue-dark $purple $mauve $fuschia $pink $baby-pink $red $mellow-red $orange $brown $yellow $green $grass-green $turquoise $light-blue
+
+@mixin swatch
+  @for $i from 1 through length($palette)
+    .swatch-#{$i}
+      background-color: nth($palette, $i)
+
+#palette
+  .palette_chips
+    +clearfix
+
+.color_chip
+  margin-bottom: 1em
+  .color_chip__swatch
+    +swatch
+    .swatch
+      height: 5em
+  .color_chip__info
+    padding: 1em
+    background-color: $grey-6
+    h5
+      margin-top: 0
+    code
+      display: block
+      margin: 0.5em 0
