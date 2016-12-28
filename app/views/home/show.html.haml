@@ -1,21 +1,96 @@
+%canvas#confetti.animated.fadeIn{:height => "1", :width => "1"}
 
 .centre
-  .save-the-date
-    %p.animated.fadeOut
-      Save the date
+  .animated.fadeIn
+    .save-the-date
+      %p
+        Luke & Jodie
+        %br
+        are getting married on
+        %br
+        15 July 2017
 
-    %p.animated.fadeIn
-      Luke & Jodie
-      %br
-      are getting married on
-      %br
-      15 July 2017
+    %nav
+      %ul
+        %li= link_to 'Getting here', :anchor => 'location'
+        %li= link_to 'Where to stay', :anchor => 'accomodation'
+        %li= link_to 'On the day', :anchor => 'other'
+        %li= link_to 'Getting in touch', :anchor => 'contact'
 
-  .notification.animated.fadeIn
-    %p
-      More information coming soon.
 
-%canvas#confetti.animated.fadeIn{:height => "1", :width => "1"}
+  %section#location
+    .column-one-whole
+      .content
+        %h2 Getting here
+        %ul.address
+          %li Address line 1
+          %li Address line 2
+          %li Town, postcode
+        %a See on map
+
+  %section#accomodation
+    .column-one-whole
+      .content.with-columns-beneath
+        %h2 Where to stay
+    .column-one-half
+      .content.with-columns-above
+        %h3 Location Name
+        %ul.address
+          %li address line 1
+          %li Address line 2
+          %li Town, postcode
+          %a Visit their website
+    .column-one-half
+      .content.with-columns-above
+        %h3 Alternative Location
+        %ul.address
+          %li Address line 1
+          %li Address line 2
+          %li Town, postcode
+          %a Visit their website
+  %section#other
+    .column-one-whole
+      .content
+        %h2 On the day
+        %table
+          %thead
+            %tr
+              %th
+              %th
+          %tbody
+            %tr
+              %td 10am
+              %td Arrive at location
+            %tr
+              %td 11am
+              %td Ceremony
+            %tr
+              %td 1pm
+              %td Dinner
+            %tr
+              %td 4:30pm
+              %td Reception
+
+  %section#contact
+    .column-one-whole
+      .content.with-columns-beneath
+        %h2 Get in touch
+    .column-one-half
+      .content.with-columns-above
+        %h3 Luke
+        %ul
+          %li 07854378272
+          %li luke@gmail.com
+    .column-one-half
+      .content.with-columns-above
+        %h3 Jodie
+        %ul
+          %li 07854378272
+          %li jodie@gmail.com
+
+
+
+
 
 :javascript
 

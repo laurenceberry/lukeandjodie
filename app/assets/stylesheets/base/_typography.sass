@@ -19,7 +19,8 @@ h2
   font-size: modular-scale(2)
 
 h3
-  font-size: modular-scale(1)
+  font-size: modular-scale(0)
+  margin-bottom: $space-5
 
 h4
   font-size: modular-scale(1)
@@ -35,12 +36,14 @@ p
 
 a
   color: $action-color
-  text-decoration: none
   transition: color 0.1s linear
+  border-bottom: 1px solid #EFC5C1
+  text-decoration: none
   &:active,
   &:focus,
   &:hover
-    color: darken($action-color, 15%)
+    color: #9C0F05
+    cursor: pointer
   &:active,
   &:focus
     outline: none
