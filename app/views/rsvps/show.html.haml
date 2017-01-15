@@ -1,0 +1,16 @@
+.centre
+  %section
+    .column-one-whole
+      .content
+
+        %h1
+          = @rsvp.name
+          - if @rsvp.attending
+            is attending
+          - else
+            is not attending
+
+        %nav.no-padding
+          %ul
+            %li=link_to "Return another RSVP", new_rsvp_path
+            %li=link_to "Return to home", root_path

@@ -1,0 +1,44 @@
+.centre
+  %section
+    .column-one-whole
+      .content
+        %h2
+          RSVPs
+
+
+        %table
+          %thead
+            %tr
+              %th Responses
+              %th Remaining
+              %th Attending
+              %th Not attending
+
+          %tbody
+            %tr
+              %td=Rsvp.count
+              %td=30 - Rsvp.count
+              %td=Rsvp.where(:attending => "1").count
+              %td=Rsvp.where(:attending => "0").count
+        %br
+
+        %table
+          %thead
+            %tr
+              %th Name
+              %th Attending
+              %th Additional
+              %th Email
+
+          %tbody
+            - @rsvp.each do |rsvp|
+              %tr
+                %td=rsvp.name
+                %td
+                  - if rsvp.attending == true
+                    Yes
+                  - else
+                    No
+                %td=rsvp.additional_info
+                %td=rsvp.contact
+

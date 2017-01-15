@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  authenticate :user do
+    resources :rsvps, only: [ :index, :destroy]
+  end
+
+  resources :rsvps
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
