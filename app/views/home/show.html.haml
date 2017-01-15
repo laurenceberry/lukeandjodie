@@ -8,45 +8,18 @@
         %p.visually-hidden
           Luke and Jodie
       %p
-        15 July 2017
+        Saturday 15 July
 
     %nav
-      %ul
-        %li= link_to 'Where to stay', :anchor => 'accomodation'
-        %li= link_to 'On the day', :anchor => 'other'
-        %li= link_to 'Getting in touch', :anchor => 'contact'
+      %a.call-to-action
+        RSVP
+
+      / %ul
+      /   %li= link_to 'On the day', :anchor => 'other'
+      /   %li= link_to 'Where to stay', :anchor => 'accomodation'
+      /   %li= link_to 'Getting in touch', :anchor => 'contact'
 
 
-
-
-  %section#accomodation
-    .column-one-whole
-      .content.with-columns-beneath
-        .heading-image
-          =image_tag "where_to_stay.png"
-        %h2.visually-hidden
-          Where to stay
-        %p
-          Unfortunately there is limited availability at the hall but please consider booking from our list of reccommended accomodation as soon as possible.
-        %br
-
-    .column-one-half
-      .content.with-columns-above
-        %h3 Simonstone Hall Hotel
-        %ul.address
-          %li Simonstone Hall Hotel
-          %li Hawes, DL8 3LZ
-          %a{:href => "http://simonstonehall.com/"} Visit website
-    .column-one-half
-      .content.with-columns-above
-        %h3 Reccommended accomodation
-        %ul.address
-          %li
-            %a Accommodation 1
-          %li
-            %a Accommodation 1
-          %li
-            %a Accommodation 1
   %section#other
     .column-one-whole
       .content.with-columns-below
@@ -74,11 +47,11 @@
               %td
                 %b The big day
             %tr
-              %td 11:30am
+              %td 12:00am
               %td Ceremony
             %tr
               %td 12:30pm
-              %td Photos
+              %td Photos and guest make their way to Simonston Hall
             %tr
               %td 2:30pm
               %td Dinner and speeches
@@ -106,6 +79,29 @@
           %li Hawes, DL8 3LZ
         %a{:href => "https://goo.gl/maps/tJmrsdVL1wt"} See on map
 
+
+  %section#accomodation
+    .column-one-whole
+      .content.with-columns-beneath
+        .heading-image
+          =image_tag "where_to_stay.png"
+        %h2.visually-hidden
+          Where to stay
+        %p
+          Unfortunately there is limited availability at the hall but please consider booking from our list of reccommended accomodation as soon as possible.
+        %br
+
+    .column-one-whole
+      .content.with-columns-above
+        %h3 Reccommended accomodation
+        %ul.address
+          %li
+            %a Accommodation 1
+          %li
+            %a Accommodation 1
+          %li
+            %a Accommodation 1
+
   %section#contact
     .column-one-whole
       .content.with-columns-beneath
@@ -117,14 +113,16 @@
       .content.with-columns-above
         %h3 Luke
         %ul
-          %li 07854378272
-          %li luke@gmail.com
+          %li lukebassnett@hotmail.co.uk
     .column-one-half
       .content.with-columns-above
         %h3 Jodie
         %ul
-          %li 07854378272
-          %li jodie@gmail.com
+          %li jodielatham@hotmail.co.uk
+
+  %nav
+    %a.call-to-action
+      RSVP
 
 
 
