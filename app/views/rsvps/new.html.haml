@@ -5,7 +5,7 @@
 
         .column-one-whole
           %h1 RSVP
-          %p RSVP for one person at a time.
+          %p Send one RSVP for each person attending.
           %br
 
           - if @rsvp.errors.any?
@@ -21,7 +21,7 @@
           = f.text_field :name
 
           %br
-          = f.label :attending, "Can you attend?"
+          = f.label :attending, "Can this person attend?"
           .radios
             = f.radio_button :attending, "1", :onclick => "$('#hidden').show();"
             = f.label :attending, 'Yes', :value => '1'
@@ -31,15 +31,15 @@
           %br
 
           #hidden
-            = f.label :additional_info, "Do you have any dietary requirements or other information we should know about?"
+            = f.label :additional_info, "Are there any dietary requirements or other information we should know about?"
             = f.text_area :additional_info
             %br
             = f.label :contact, "What is your email?"
-            %p We will contact you when we have more information.
+            %p We will contact you when we have more information, for example; meal choices.
             = f.email_field :contact
             %br
           %p
-            = f.submit "Save and continue"
+            = f.submit "Send this RSVP"
 
           %nav.no-padding.no-margin
             %ul
