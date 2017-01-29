@@ -3,6 +3,8 @@ html, body
   padding: 0
   background: #FFF
   width: 100%
+div
+  box-sizing: border-box
 
 #confetti
   position: absolute
@@ -54,6 +56,12 @@ section
   z-index: 20
   position: relative
   margin-bottom: $space-3
+.column-one-third
+  +small()
+    width: 32.5%
+  width: 100%
+  display: inline-block
+  vertical-align: top
 .column-one-half
   +small()
     width: 49.5%
@@ -82,7 +90,8 @@ section
 table
   font-size: .85em
   td, th:first-child
-    width: 25%
+    width: 32.5%
+    padding-right: 25px
   td, th
     border-bottom: 1px solid #EFC5C1
   thead
@@ -91,9 +100,9 @@ table
   tbody
     tr
       td
-        padding: $space-4 0
-
-
+        padding: $space-4 0 $space-4 25px
+      td:first-child
+        padding-left: 0
 
 .home#show
   background-color: lighten(#FFF4EE, 2%)

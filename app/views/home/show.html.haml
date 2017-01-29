@@ -8,7 +8,7 @@
         %p.visually-hidden
           Luke and Jodie
       %p
-        Saturday 15 July
+        Saturday 15 July 2017
 
     %nav
       =link_to "RSVP", new_rsvp_path, class: "call-to-action"
@@ -38,7 +38,7 @@
               %td
                 %b The day before
             %tr
-              %td 5:00pm
+              %td
               %td Early guests arrive
             %tr
               %td
@@ -46,23 +46,13 @@
               %td
                 %b The big day
             %tr
-              %td 12:00am
-              %td Ceremony
+              %td 12:00 noon
+              %td Ceremony followed by reception
             %tr
-              %td 12:30pm
-              %td Photos and guest make their way to Simonston Hall
-            %tr
-              %td 2:30pm
-              %td Dinner and speeches
-            %tr
-              %td 6:00pm
+              %td From 6:00pm
               %td Evening guests arrive
-            %tr
-              %td 7:00pm
-              %td Evening food
 
-
-    .column-one-half
+    .column-one-third
       .content.with-columns-above
         %h3 The ceremony
         %ul.address
@@ -70,14 +60,15 @@
           %li High Abbotside
           %li Hawes, DL8 3LZ
         %a{:href => "https://goo.gl/maps/73QFmMWZnuL2"} See on map
-    .column-one-half
+    .column-one-third
       .content.with-columns-above
         %h3 The reception
         %ul.address
           %li Simonstone Hall Hotel
           %li Hawes, DL8 3LZ
         %a{:href => "https://goo.gl/maps/tJmrsdVL1wt"} See on map
-
+    .column-one-third
+      .content.with-columns-above
 
   %section#accomodation
     .column-one-whole
@@ -90,16 +81,29 @@
           Unfortunately there is limited availability at the hall but please consider booking from our list of reccommended accomodation as soon as possible.
         %br
 
-    .column-one-whole
+    .column-one-third
       .content.with-columns-above
-        %h3 Reccommended accomodation
+        %h3 The Board Inn
         %ul.address
-          %li
-            %a Accommodation 1
-          %li
-            %a Accommodation 1
-          %li
-            %a Accommodation 1
+          %li Market Place
+          %li Hawes DL8 3RD
+          %li 01969 667223
+    .column-one-third
+      .content.with-columns-above
+        %h3 The Green Dragon Inn
+        %ul.address
+          %li Bellow Hill
+          %li Hardraw
+          %li Hawes DL8 3LZ
+          %li 01969 667392
+    .column-one-third
+      .content.with-columns-above
+        %h3 Bulls Head Hotel
+        %ul.address
+          %li Market Place
+          %li Hawes DL8 3RD
+          %li 01969 667437
+
 
   %section#contact
     .column-one-whole
@@ -108,20 +112,21 @@
           =image_tag "get_in_touch.png"
         %h2.visually-hidden
           Get in touch
-    .column-one-half
+    .column-one-third
       .content.with-columns-above
         %h3 Luke
         %ul
           %li lukebassnett@hotmail.co.uk
-    .column-one-half
+    .column-one-third
       .content.with-columns-above
         %h3 Jodie
         %ul
           %li jodielatham@hotmail.co.uk
-
+    .column-one-third
+      .content.with-columns-above
   %nav
     %a.call-to-action
-      RSVP
+      =link_to "RSVP", new_rsvp_path, class: "call-to-action"
 
 
 

@@ -4,13 +4,15 @@
       .content
 
         %h1
+          Thank you for letting us know
           = @rsvp.name
           - if @rsvp.attending
-            is attending
+            is attending.
           - else
-            is not attending
+            is not attending.
 
         %nav.no-padding
           %ul
             %li=link_to "Return another RSVP", new_rsvp_path
-            %li=link_to "Return to home", root_path
+            %br
+            %li=link_to "Finish", root_path
